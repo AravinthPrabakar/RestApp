@@ -1,0 +1,669 @@
+[WARN ] 2022-06-05 17:29:37.148 [main] DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+[WARN ] 2022-06-05 17:29:37.213 [vert.x-eventloop-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 17:29:37.706 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 17:30:37.339 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 17:34:49.572 [main] DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+[WARN ] 2022-06-05 17:34:49.638 [vert.x-eventloop-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 17:34:49.756 [pool-2-thread-1] App - Future{unresolved}
+[WARN ] 2022-06-05 17:39:01.529 [main] DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+[WARN ] 2022-06-05 17:39:01.579 [vert.x-eventloop-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[WARN ] 2022-06-05 17:41:19.796 [main] DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+[WARN ] 2022-06-05 17:41:19.876 [vert.x-eventloop-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[WARN ] 2022-06-05 17:42:10.824 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-1,5,main] has been blocked for 50945 ms, time limit is 2000 ms
+io.vertx.core.VertxException: Thread blocked
+	at java.util.zip.Inflater.inflateBytesBytes(Native Method) ~[?:?]
+	at java.util.zip.Inflater.inflate(Inflater.java:385) ~[?:?]
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:153) ~[?:?]
+	at jdk.internal.loader.Resource.getBytes(Resource.java:124) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:797) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621) ~[?:?]
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at io.vertx.ext.web.impl.RouterState.<clinit>(RouterState.java:34) ~[vertx-web-4.3.1.jar:4.3.1]
+	at io.vertx.ext.web.impl.RouterImpl.<init>(RouterImpl.java:47) ~[vertx-web-4.3.1.jar:4.3.1]
+	at io.vertx.ext.web.Router.router(Router.java:76) ~[vertx-web-4.3.1.jar:4.3.1]
+	at io.vertx.smaato.web.rest.App.start(App.java:29) ~[classes/:?]
+	at io.vertx.core.AbstractVerticle.start(AbstractVerticle.java:106) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.DeploymentManager.lambda$doDeploy$5(DeploymentManager.java:196) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.DeploymentManager$$Lambda$124/0x0000000800284c40.handle(Unknown Source) ~[?:?]
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:101) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:64) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext.lambda$runOnContext$0(EventLoopContext.java:44) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext$$Lambda$125/0x0000000800285840.run(Unknown Source) ~[?:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+[WARN ] 2022-06-05 17:43:49.408 [main] DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+[WARN ] 2022-06-05 17:43:49.453 [vert.x-eventloop-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[ERROR] 2022-06-05 17:43:49.564 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:44:49.523 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:45:49.522 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:46:49.524 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:47:49.525 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:48:49.528 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:49:49.526 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:50:49.527 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:51:49.529 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:52:49.528 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:53:49.528 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:54:49.531 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:55:49.531 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:56:49.530 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:57:49.531 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:58:49.532 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 17:59:49.533 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 18:00:49.538 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 18:01:49.535 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 18:02:49.535 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 18:03:49.536 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 18:04:49.540 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 18:05:49.541 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2022-06-05 18:06:49.542 [pool-2-thread-1] App - FAILED
+java.lang.NullPointerException: null
+	at io.vertx.smaato.web.rest.scheduler.LogScheduler.lambda$start$0(LogScheduler.java:32) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[WARN ] 2022-06-05 18:07:12.395 [main] DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+[WARN ] 2022-06-05 18:07:12.490 [vert.x-eventloop-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 18:07:12.977 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 18:09:12.872 [main] DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+[WARN ] 2022-06-05 18:09:12.935 [vert.x-eventloop-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[WARN ] 2022-06-05 18:09:15.556 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-1,5,main] has been blocked for 2620 ms, time limit is 2000 ms
+[INFO ] 2022-06-05 18:09:15.838 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:10:16.440 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:11:13.038 [vert.x-eventloop-thread-1] App - 1
+[INFO ] 2022-06-05 18:12:13.042 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:13:13.040 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:14:13.045 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:15:13.041 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:16:13.042 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:17:13.044 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:18:13.047 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:19:13.052 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:20:13.051 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:21:13.052 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:22:13.056 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:23:13.054 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:24:13.054 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:25:13.056 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:26:13.060 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:27:13.057 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:28:13.058 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:29:13.058 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:30:13.063 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:31:13.060 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:32:13.062 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:33:13.062 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:34:13.066 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:35:13.064 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:36:13.064 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:37:13.065 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:38:13.072 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:39:13.067 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:40:13.067 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:41:13.068 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:42:13.072 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:43:13.070 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:44:13.071 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:45:13.072 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:46:13.075 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:47:13.073 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:48:13.074 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:49:13.075 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:50:13.079 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:51:13.076 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:52:13.078 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:53:13.078 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:54:13.082 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:55:13.080 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:56:13.080 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:57:13.081 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:58:13.085 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 18:59:13.083 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:00:13.084 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:01:13.086 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:02:13.088 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:03:13.086 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:04:13.087 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:05:13.087 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:06:13.093 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:07:13.089 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:08:13.090 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:09:13.090 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:10:13.095 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:11:13.093 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:12:13.093 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:13:13.094 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:14:13.098 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:15:13.099 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:16:13.094 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:17:13.092 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:18:13.100 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:19:13.097 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:20:13.093 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:21:13.096 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:22:13.101 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:23:13.105 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:24:13.097 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:25:13.101 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:26:13.108 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:27:13.099 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:28:13.099 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:29:13.101 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:30:13.113 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:31:13.102 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:32:13.104 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:33:13.105 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:34:13.109 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:35:13.106 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:36:13.108 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:37:13.108 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:58:29.320 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 19:59:29.308 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:00:29.311 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:01:29.306 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:02:29.312 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:03:29.306 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:04:29.310 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:05:29.317 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:06:29.317 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:07:29.307 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:08:29.306 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:09:29.308 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:10:29.314 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:11:29.306 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:12:29.309 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 20:13:01.929 [main] DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+[WARN ] 2022-06-05 20:13:01.978 [vert.x-eventloop-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:13:02.332 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 20:13:43.124 [vert.x-worker-thread-0] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:14:02.000 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 20:14:39.141 [vert.x-worker-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:15:01.998 [vert.x-eventloop-thread-1] App - 1
+[INFO ] 2022-06-05 20:16:01.998 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 20:16:35.496 [main] DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+[WARN ] 2022-06-05 20:16:35.588 [vert.x-eventloop-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:16:36.005 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 20:16:58.877 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-2,5,main] has been blocked for 2808 ms, time limit is 2000 ms
+[WARN ] 2022-06-05 20:16:58.917 [vert.x-worker-thread-0] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[WARN ] 2022-06-05 20:18:38.991 [main] DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+[WARN ] 2022-06-05 20:18:39.066 [vert.x-eventloop-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:18:39.446 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 20:18:52.581 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-2,5,main] has been blocked for 2535 ms, time limit is 2000 ms
+[WARN ] 2022-06-05 20:18:53.304 [vert.x-worker-thread-0] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:19:43.020 [vert.x-worker-thread-0] App - Endpoint response: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:80
+[INFO ] 2022-06-05 20:19:50.072 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 20:19:50.063 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 7045 ms, time limit is 2000 ms
+io.vertx.core.VertxException: Thread blocked
+	at io.vertx.redis.client.impl.RedisConnectionManager.checkExpired(RedisConnectionManager.java:89) ~[vertx-redis-client-4.3.1.jar:4.3.1]
+	at io.vertx.redis.client.impl.RedisConnectionManager.lambda$start$1(RedisConnectionManager.java:73) ~[vertx-redis-client-4.3.1.jar:4.3.1]
+	at io.vertx.redis.client.impl.RedisConnectionManager$$Lambda$130/0x0000000800286c40.handle(Unknown Source) ~[?:?]
+	at io.vertx.core.impl.VertxImpl$InternalTimerHandler.handle(VertxImpl.java:901) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.VertxImpl$InternalTimerHandler.handle(VertxImpl.java:872) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:56) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.ContextImpl.emit(ContextImpl.java:274) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:23) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.AbstractContext.emit(AbstractContext.java:54) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:23) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.VertxImpl$InternalTimerHandler.run(VertxImpl.java:890) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+[WARN ] 2022-06-05 20:19:50.063 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-worker-thread-0,5,main] has been blocked for 60023 ms, time limit is 60000 ms
+io.vertx.core.VertxException: Thread blocked
+	at io.vertx.core.http.impl.Http1xServerResponse.setStatusCode(Http1xServerResponse.java:150) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.smaato.web.rest.handler.GetHandler.handleSync(GetHandler.java:66) ~[classes/:?]
+	at io.vertx.smaato.web.rest.handler.SyncHandler.lambda$handle$0(SyncHandler.java:15) ~[classes/:?]
+	at io.vertx.smaato.web.rest.handler.SyncHandler$$Lambda$207/0x000000080034f040.run(Unknown Source) ~[?:?]
+	at io.vertx.smaato.web.rest.handler.SyncHandler.lambda$runAsync$2(SyncHandler.java:28) ~[classes/:?]
+	at io.vertx.smaato.web.rest.handler.SyncHandler$$Lambda$208/0x000000080034f440.handle(Unknown Source) ~[?:?]
+	at io.vertx.core.impl.ContextImpl.lambda$null$0(ContextImpl.java:159) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.ContextImpl$$Lambda$212/0x000000080034d840.handle(Unknown Source) ~[?:?]
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:101) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$1(ContextImpl.java:157) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.ContextImpl$$Lambda$210/0x000000080034e040.run(Unknown Source) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+[WARN ] 2022-06-05 20:20:01.125 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 6386 ms, time limit is 2000 ms
+io.vertx.core.VertxException: Thread blocked
+	at java.lang.Thread.start(Thread.java:799) ~[?:?]
+	at io.netty.util.concurrent.ThreadPerTaskExecutor.execute(ThreadPerTaskExecutor.java:32) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.ThreadExecutorMap$1.execute(ThreadExecutorMap.java:57) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.doStartThread(SingleThreadEventExecutor.java:984) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.startThread(SingleThreadEventExecutor.java:953) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:836) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute0(SingleThreadEventExecutor.java:825) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:815) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.vertx.core.impl.EventLoopContext.execute(EventLoopContext.java:89) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.ContextImpl.execute(ContextImpl.java:260) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext.execute(EventLoopContext.java:23) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.future.FutureBase.emitSuccess(FutureBase.java:51) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.future.FutureImpl.tryComplete(FutureImpl.java:211) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.future.PromiseImpl.tryComplete(PromiseImpl.java:23) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.future.PromiseImpl.onSuccess(PromiseImpl.java:49) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.future.PromiseImpl.handle(PromiseImpl.java:41) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.future.PromiseImpl.handle(PromiseImpl.java:23) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.net.impl.pool.Endpoint.lambda$getConnection$0(Endpoint.java:52) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.net.impl.pool.Endpoint$$Lambda$138/0x0000000800296440.handle(Unknown Source) ~[?:?]
+	at io.vertx.redis.client.impl.RedisConnectionManager$RedisEndpoint.lambda$requestConnection$0(RedisConnectionManager.java:414) ~[vertx-redis-client-4.3.1.jar:4.3.1]
+	at io.vertx.redis.client.impl.RedisConnectionManager$RedisEndpoint$$Lambda$139/0x0000000800295840.handle(Unknown Source) ~[?:?]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:56) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext.lambda$emit$1(EventLoopContext.java:63) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext$$Lambda$213/0x000000080034dc40.run(Unknown Source) ~[?:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+[WARN ] 2022-06-05 20:20:02.113 [vert.x-worker-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[WARN ] 2022-06-05 20:20:07.651 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 2764 ms, time limit is 2000 ms
+[INFO ] 2022-06-05 20:20:10.213 [vert.x-eventloop-thread-1] App - Endpoint response: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:80
+[WARN ] 2022-06-05 20:20:10.213 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 5326 ms, time limit is 2000 ms
+io.vertx.core.VertxException: Thread blocked
+	at jdk.internal.org.objectweb.asm.MethodVisitor.visitInsn(MethodVisitor.java:369) ~[?:?]
+	at java.lang.invoke.InnerClassLambdaMetafactory$ForwardingMethodGenerator.generate(InnerClassLambdaMetafactory.java:484) ~[?:?]
+	at java.lang.invoke.InnerClassLambdaMetafactory.spinInnerClass(InnerClassLambdaMetafactory.java:293) ~[?:?]
+	at java.lang.invoke.InnerClassLambdaMetafactory.buildCallSite(InnerClassLambdaMetafactory.java:194) ~[?:?]
+	at java.lang.invoke.LambdaMetafactory.metafactory(LambdaMetafactory.java:329) ~[?:?]
+	at java.lang.invoke.LambdaForm$DMH/0x0000000800287040.invokeStatic(LambdaForm$DMH) ~[?:?]
+	at java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder) ~[?:?]
+	at java.lang.invoke.BootstrapMethodInvoker.invoke(BootstrapMethodInvoker.java:127) ~[?:?]
+	at java.lang.invoke.CallSite.makeSite(CallSite.java:307) ~[?:?]
+	at java.lang.invoke.MethodHandleNatives.linkCallSiteImpl(MethodHandleNatives.java:258) ~[?:?]
+	at java.lang.invoke.MethodHandleNatives.linkCallSite(MethodHandleNatives.java:248) ~[?:?]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.lambda$checkExpired$4(SharedClientHttpStreamEndpoint.java:118) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint$$Lambda$258/0x00000008003d0040.handle(Unknown Source) ~[?:?]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool$Evict$2.run(SimpleConnectionPool.java:529) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.net.impl.pool.CombinerExecutor.submit(CombinerExecutor.java:50) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.execute(SimpleConnectionPool.java:245) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.evict(SimpleConnectionPool.java:537) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.checkExpired(SharedClientHttpStreamEndpoint.java:115) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.http.impl.HttpClientImpl.lambda$static$1(HttpClientImpl.java:109) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.http.impl.HttpClientImpl$$Lambda$224/0x000000080034a840.accept(Unknown Source) ~[?:?]
+	at java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4772) ~[?:?]
+	at io.vertx.core.net.impl.pool.ConnectionManager.forEach(ConnectionManager.java:39) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.http.impl.HttpClientImpl.checkExpired(HttpClientImpl.java:210) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.http.impl.HttpClientImpl.access$100(HttpClientImpl.java:51) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.http.impl.HttpClientImpl$PoolChecker.handle(HttpClientImpl.java:204) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.http.impl.HttpClientImpl$PoolChecker.handle(HttpClientImpl.java:192) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.VertxImpl$InternalTimerHandler.handle(VertxImpl.java:901) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.VertxImpl$InternalTimerHandler.handle(VertxImpl.java:872) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:56) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.ContextImpl.emit(ContextImpl.java:274) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:23) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.AbstractContext.emit(AbstractContext.java:54) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:23) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.VertxImpl$InternalTimerHandler.run(VertxImpl.java:890) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+[WARN ] 2022-06-05 20:20:10.219 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-1,5,main] has been blocked for 2560 ms, time limit is 2000 ms
+[INFO ] 2022-06-05 20:20:39.154 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 20:21:21.530 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 2140 ms, time limit is 2000 ms
+[WARN ] 2022-06-05 20:21:22.005 [vert.x-worker-thread-2] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:21:30.310 [vert.x-eventloop-thread-1] App - Endpoint response: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:80
+[INFO ] 2022-06-05 20:21:39.151 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 20:21:51.001 [vert.x-worker-thread-3] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:21:51.022 [vert.x-eventloop-thread-1] App - Endpoint response: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:80
+[WARN ] 2022-06-05 20:22:11.130 [vert.x-worker-thread-4] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:22:11.142 [vert.x-eventloop-thread-1] App - Endpoint response: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:80
+[INFO ] 2022-06-05 20:22:39.151 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 20:23:03.038 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 10273 ms, time limit is 2000 ms
+io.vertx.core.VertxException: Thread blocked
+	at java.lang.Thread.<init>(Thread.java:452) ~[?:?]
+	at java.lang.Thread.<init>(Thread.java:709) ~[?:?]
+	at java.lang.Thread.<init>(Thread.java:582) ~[?:?]
+	at io.netty.util.concurrent.FastThreadLocalThread.<init>(FastThreadLocalThread.java:60) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.vertx.core.impl.VertxThread.<init>(VertxThread.java:32) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.spi.VertxThreadFactory.newVertxThread(VertxThreadFactory.java:35) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.VertxImpl.lambda$createThreadFactory$21(VertxImpl.java:1099) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.VertxImpl$$Lambda$97/0x0000000800220040.newThread(Unknown Source) ~[?:?]
+	at io.netty.util.concurrent.ThreadPerTaskExecutor.execute(ThreadPerTaskExecutor.java:32) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.ThreadExecutorMap$1.execute(ThreadExecutorMap.java:57) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.doStartThread(SingleThreadEventExecutor.java:984) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.startThread(SingleThreadEventExecutor.java:953) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:836) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute0(SingleThreadEventExecutor.java:825) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:815) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.vertx.core.impl.EventLoopContext.execute(EventLoopContext.java:89) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.ContextImpl.execute(ContextImpl.java:260) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext.execute(EventLoopContext.java:23) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.future.FutureBase.emitSuccess(FutureBase.java:51) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.future.FutureImpl.tryComplete(FutureImpl.java:211) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.future.PromiseImpl.tryComplete(PromiseImpl.java:23) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.future.PromiseImpl.onSuccess(PromiseImpl.java:49) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.future.PromiseImpl.handle(PromiseImpl.java:41) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.future.PromiseImpl.handle(PromiseImpl.java:23) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.net.impl.pool.Endpoint.lambda$getConnection$0(Endpoint.java:52) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.net.impl.pool.Endpoint$$Lambda$138/0x0000000800296440.handle(Unknown Source) ~[?:?]
+	at io.vertx.redis.client.impl.RedisConnectionManager$RedisEndpoint.lambda$requestConnection$0(RedisConnectionManager.java:414) ~[vertx-redis-client-4.3.1.jar:4.3.1]
+	at io.vertx.redis.client.impl.RedisConnectionManager$RedisEndpoint$$Lambda$139/0x0000000800295840.handle(Unknown Source) ~[?:?]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:56) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext.lambda$emit$1(EventLoopContext.java:63) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.EventLoopContext$$Lambda$213/0x000000080034dc40.run(Unknown Source) ~[?:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+[WARN ] 2022-06-05 20:23:03.082 [vert.x-worker-thread-5] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:23:59.861 [vert.x-eventloop-thread-1] App - Endpoint response: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:80
+[WARN ] 2022-06-05 20:23:59.858 [vertx-blocked-thread-checker] BlockedThreadChecker - Thread Thread[vert.x-worker-thread-5,5,main] has been blocked for 67096 ms, time limit is 60000 ms
+io.vertx.core.VertxException: Thread blocked
+	at io.netty.buffer.AbstractByteBuf.ensureWritable0(AbstractByteBuf.java:285) ~[netty-buffer-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.buffer.AbstractByteBuf.ensureWritable(AbstractByteBuf.java:280) ~[netty-buffer-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1073) ~[netty-buffer-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1081) ~[netty-buffer-4.1.77.Final.jar:4.1.77.Final]
+	at io.vertx.core.buffer.impl.BufferImpl.<init>(BufferImpl.java:76) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.buffer.impl.BufferImpl.<init>(BufferImpl.java:84) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.buffer.impl.BufferImpl.<init>(BufferImpl.java:88) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.buffer.impl.BufferImpl.buffer(BufferImpl.java:50) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.buffer.Buffer.buffer(Buffer.java:72) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.http.impl.Http1xServerResponse.end(Http1xServerResponse.java:367) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.smaato.web.rest.handler.GetHandler.handleSync(GetHandler.java:66) ~[classes/:?]
+	at io.vertx.smaato.web.rest.handler.SyncHandler.lambda$handle$0(SyncHandler.java:15) ~[classes/:?]
+	at io.vertx.smaato.web.rest.handler.SyncHandler$$Lambda$207/0x000000080034f040.run(Unknown Source) ~[?:?]
+	at io.vertx.smaato.web.rest.handler.SyncHandler.lambda$runAsync$2(SyncHandler.java:28) ~[classes/:?]
+	at io.vertx.smaato.web.rest.handler.SyncHandler$$Lambda$208/0x000000080034f440.handle(Unknown Source) ~[?:?]
+	at io.vertx.core.impl.ContextImpl.lambda$null$0(ContextImpl.java:159) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.ContextImpl$$Lambda$212/0x000000080034d840.handle(Unknown Source) ~[?:?]
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:101) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$1(ContextImpl.java:157) ~[vertx-core-4.3.1.jar:4.3.1]
+	at io.vertx.core.impl.ContextImpl$$Lambda$210/0x000000080034e040.run(Unknown Source) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+[WARN ] 2022-06-05 20:24:35.143 [vert.x-worker-thread-6] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:24:35.152 [vert.x-eventloop-thread-1] App - Endpoint response: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:80
+[WARN ] 2022-06-05 20:30:59.971 [main] DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+[WARN ] 2022-06-05 20:31:00.040 [vert.x-eventloop-thread-1] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:31:00.431 [vert.x-eventloop-thread-1] App - 0
+[WARN ] 2022-06-05 20:31:18.527 [vert.x-worker-thread-0] VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+[INFO ] 2022-06-05 20:31:18.967 [vert.x-eventloop-thread-1] App - Endpoint response: 405
+[INFO ] 2022-06-05 20:32:00.170 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:33:00.169 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:34:00.168 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:35:00.172 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:36:00.169 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:37:00.168 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:38:00.175 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:39:00.175 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:40:00.174 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:41:00.178 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:42:00.180 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:43:00.175 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:44:00.177 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:45:00.176 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:46:00.183 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:47:00.173 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:48:00.180 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:49:00.175 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:50:00.210 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:51:00.212 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:52:00.213 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:53:00.211 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:54:00.219 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:55:00.215 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:56:00.211 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:57:00.208 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:58:00.219 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:59:00.212 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:00:00.222 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:01:00.214 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:02:00.212 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:03:00.215 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:04:00.214 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:05:00.214 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:06:00.214 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:07:00.218 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:08:00.217 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:09:00.242 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:10:00.247 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:11:00.256 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:12:00.247 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:13:00.251 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:14:00.252 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:15:00.261 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:16:00.249 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:17:00.250 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:18:00.250 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:19:00.254 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:20:00.253 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:21:00.254 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:22:00.252 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:23:00.264 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:24:00.254 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:25:00.254 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:26:00.256 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:27:00.260 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:28:00.244 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:29:00.243 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 21:30:00.241 [vert.x-eventloop-thread-1] App - 0
