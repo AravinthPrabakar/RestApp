@@ -2,12 +2,9 @@ package io.vertx.smaato.web.rest.handler;
 
 import io.vertx.core.*;
 import io.vertx.ext.web.RoutingContext;
-import org.slf4j.MDC;
 
-import javax.annotation.Nullable;
-import java.util.Map;
 import java.util.concurrent.CompletableFuture;
-import java.util.function.Consumer;
+
 
 public abstract class SyncHandler implements Handler<RoutingContext> {
     @Override

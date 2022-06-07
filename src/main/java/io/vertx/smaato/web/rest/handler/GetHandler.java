@@ -40,16 +40,13 @@ public class GetHandler extends SyncHandler {
                 //This would do validation of the endpoint for the URL format
                 URI uri = new URI(endPoint);
             }
-            client.connect()
-                    .compose(conn -> {
-                        return redis.get(String.valueOf(id)).compose(result->{
-                            if(result == null || result.toString().isEmpty()){
-                                redis.set(Arrays.asList(String.valueOf(id),"1"));
-                                redis.incr(AppHelper.uniqueReq);
-                            }
-                            return redis.get(String.valueOf(id));
-                        });
-                    }).onFailure(ex->ex.printStackTrace());
+            redis.get(String.valueOf(id)).compose(result->{
+                if(result == null || result.toString().isEmpty()){
+                    redis.set(Arrays.asList(String.valueOf(id),"1"));
+                    redis.incr(AppHelper.uniqueReq);
+                }
+                return redis.get(String.valueOf(id));
+            }).onFailure(ex->ex.printStackTrace());
 
             if(endPoint!=null && !endPoint.isEmpty()){
                 WebClient client = WebClient.create(Vertx.vertx());
