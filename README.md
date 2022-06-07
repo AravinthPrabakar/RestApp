@@ -39,7 +39,7 @@ provided. As name suggests, it’s not a UI but backend.
 
 -   Install maven 3 
 
-**How to build:**
+**How to Run:**
 
 cd to path where application is downloaded/cloned.
 
