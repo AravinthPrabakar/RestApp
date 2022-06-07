@@ -6,7 +6,7 @@ Provides backend API for the application
 
 **REST Application API**
 
-The project consist of Vert.x Application - Reactive framework -https://vertx.io/ which has below API 
+The project consist of Vert.x Application - Reactive toolkit -https://vertx.io/ which has below API 
 1. **GET** - /api/smaato/accept?id=1001&endpoint=https://google.com
 2. Validation of the query parameters,
     - **SUCCESS** - "ok"
