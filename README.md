@@ -18,21 +18,21 @@ The project consist of Vert.x Application - Reactive framework -https://vertx.io
 
 **For Example**
 
-[INFO ] 2022-06-05 20:32:00.170 [vert.x-eventloop-thread-1] App - 10
-[INFO ] 2022-06-05 20:33:00.169 [vert.x-eventloop-thread-1] App - 5
-[INFO ] 2022-06-05 20:34:00.168 [vert.x-eventloop-thread-1] App - 17
-[INFO ] 2022-06-05 20:35:00.172 [vert.x-eventloop-thread-1] App - 12
-[INFO ] 2022-06-05 20:36:00.172 [vert.x-eventloop-thread-1] App - Endpoint response: 200
-[INFO ] 2022-06-05 20:37:00.172 [vert.x-eventloop-thread-1] App - 0
-[INFO ] 2022-06-05 20:38:00.172 [vert.x-eventloop-thread-1] App - 0
+[INFO ] 2022-06-05 20:32:00.170 [vert.x-eventloop-thread-1] App - 10 \
+[INFO ] 2022-06-05 20:33:00.169 [vert.x-eventloop-thread-1] App - 5 \
+[INFO ] 2022-06-05 20:34:00.168 [vert.x-eventloop-thread-1] App - 17 \
+[INFO ] 2022-06-05 20:35:00.172 [vert.x-eventloop-thread-1] App - 12 \
+[INFO ] 2022-06-05 20:36:00.172 [vert.x-eventloop-thread-1] App - Endpoint response: 200 \
+[INFO ] 2022-06-05 20:37:00.172 [vert.x-eventloop-thread-1] App - 0 \
+[INFO ] 2022-06-05 20:38:00.172 [vert.x-eventloop-thread-1] App - 0 
 
 For simplicity, User authentication and Authorization has been not
 provided. As name suggests, it’s not a UI but backend.
 
 
 **Prerequisites:**
--   Run Redis docker locally
-    docker run --name my-redis -p 6379:6379 -d redis
+-   Run Redis docker locally \
+    docker run --name my-redis -p 6379:6379 -d redis \
     docker ps
     
 -   Install JDK 11
